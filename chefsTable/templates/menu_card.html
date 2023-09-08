@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+    {% if menu %}
+    {% for item in menu%}        
+        <tr>
+            <td style="border: 1px solid black;">{{item.name}}</td>
+            <td style="border: 1px solid black;">{{item.price}}</td>
+        </tr>
+    {% endfor %}
+    {% else %}
+    No Item to Display
+    {% endif %}
+    </table>
+</body>
+</html>

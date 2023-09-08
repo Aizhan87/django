@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'menuapp.apps.MenuappConfig',
     'myapp.apps.MyappConfig',
     'menu.apps.MenuConfig',
     'django.contrib.admin',
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'chefsTable.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 from myapp import views
 from menu import views
+from menuapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
     path('dishes/', include('menu.urls')),
+    path('menus/', include('menuapp.urls')),
 ]
