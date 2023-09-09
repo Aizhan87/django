@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'testapp.apps.TestappConfig',
     'templateapp.apps.TemplateappConfig',
     'menuapp.apps.MenuappConfig',
     'myapp.apps.MyappConfig',
@@ -125,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = ["chefsTable/static",]
+STATICFILES_DIRS = ["chefsTable/static"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
